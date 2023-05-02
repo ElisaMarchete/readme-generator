@@ -36,7 +36,6 @@ const questions = inquirer
       message: "Add test instructions:",
     },
     {
-      // THEN a badge for that license is added near the top of the README
       type: "checkbox",
       name: "license",
       message: "'What license you would like to use?",
@@ -69,12 +68,11 @@ const questions = inquirer
   ])
   .then((answers) => {
     const readmeContent = generateReadme(answers);
-
-    //C:\Users\bmarc\Desktop\boot_camp\CHALLENGES\Challenge08-readmegenerator\readme-generator\README
-    // TODO: Create a function to write README file
-    fs.writeFile("README/readme.md", readmeContent, (err) =>
-      err ? console.log(err) : console.log("Successfully created readme.md!")
-    );
+    console.log(readmeContent),
+      // TODO: Create a function to write README file
+      fs.writeFile("README/readme.md", readmeContent, (err) =>
+        err ? console.log(err) : console.log("Successfully created readme.md!")
+      );
   });
 
 // TODO: Create a function to initialize app
@@ -112,7 +110,7 @@ ${installation}
 ${usage}
 
 ## License
-This project is licensed under ${license}.
+This project is licensed under ${license}. 
 
 ## Contributing
 Thank you for considering contributing to our project! We welcome all contributions, big or small. Here are a few guidelines for how to get started:  
@@ -127,3 +125,6 @@ If you have any questions about the repo, open an issue or contact me directly a
 
 // // Function call to initialize app
 // init();
+
+// send license information to the generateMarkdown function
+// THEN a badge for that license is added near the top of the README
