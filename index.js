@@ -115,7 +115,9 @@ ${installation}
 ${usage}
 
 ## License
-This project is licensed under ${license} 
+This project is licensed under ${license} ${generateMarkdown.renderLicenseBadge(
+    license
+  )} ${generateMarkdown.renderLicenseLink(license)}
 
 ## Contributing
 Thank you for considering contributing to our project! We welcome all contributions, big or small. Here are a few guidelines for how to get started:
