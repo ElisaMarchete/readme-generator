@@ -102,7 +102,7 @@ ${renderLicenseLink(license)}
 
 ## Contributing
 Thank you for considering contributing to this project! I welcome all contributions, big or small. Here are a few guidelines for how to get started:
-If you find a bug or issue, or If you have a suggestion for a new feature or improvement, please create a new issue on the following GitHub repository: ${repository}
+If you find a bug or issue, or have a suggestion for a new feature or improvement, please create a new issue on the following GitHub repository: ${repository}
 
 ## Tests
 ${tests}
