@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function to load the badge for the license
 function renderLicenseBadge(license) {
   switch (license) {
     case "Apache License":
@@ -31,8 +30,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function to load the link for the license
 function renderLicenseLink(license) {
   switch (license) {
     case "Apache License":
@@ -64,49 +62,63 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//   if (license === "Apache License") {
-//     return `This project is licensed under the Apache License 2.0 license.`;
-//   } else if (license === "GNU General Public License (GPL)") {
-//     return `This project is licensed under the GNU General Public License v3.0 license.`;
-//   } else if (license === "MIT License") {
-//     return `This project is licensed under the MIT license.`;
-//   } else if (license === "BSD 2-Clause 'Simplified'License") {
-//     return `This project is licensed under the BSD 2-Clause 'Simplified' License.`;
-//   } else if (license === "BSD 3-Clause 'Revised' License") {
-//     return `This project is licensed under the BSD 3-Clause 'Revised' License.`;
-//   } else if (license === "Boost Software License") {
-//     return `This project is licensed under the Boost Software License 1.0.`;
-//   } else if (license === "Creative Commons Zero Universal") {
-//     return `This project is licensed under the Creative Commons Zero Universal 1.0 license.`;
-//   } else if (license === "Eclipse Public License (EPL)") {
-//     return `This project is licensed under the Eclipse Public License 2.0.`;
-//   } else if (license === "GNU Affero General Public License (AGPL)") {
-//     return `This project is licensed under the GNU Affero General Public License v3.0 license.`;
-//   } else if (license === "GNU Lesser General Public License (LGPL)") {
-//     return `This project is licensed under the GNU Lesser General Public License v3.0 license.`;
-//   } else if (license === "Mozilla Public License 2.0") {
-//     return `This project is licensed under the Mozilla Public License 2.0 license.`;
-//   } else if (license === "The Unlicense") {
-//     return `This project is licensed under the The Unlicense license.`;
-//   } else {
-//     return "";
-//   }
-// }
+// Function to generate markdown for README
+const generateMarkdown = ({
+  title,
+  description,
+  installation,
+  usage,
+  license,
+  repository,
+  tests,
+  name,
+  email,
+}) =>
+  `# ${title}
 
-// TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//   const result = renderLicenseBadge(data.license);
-//   const link = renderLicenseLink(data.license);
-//   return `# ${data.title}
-//   ${renderLicenseBadge(data.license)}`;
-// }
+${renderLicenseBadge(license)} 
 
-// module.exports = generateMarkdown;
 
-module.exports = {
-  renderLicenseBadge,
-  renderLicenseLink,
-};
+## Description
+${description}
+
+
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+
+## Installation
+${installation}
+
+
+## Usage
+${usage}
+
+
+## License
+This project is licensed under ${license}  
+${renderLicenseLink(license)}
+
+
+## Contributing
+Thank you for considering contributing to our project! We welcome all contributions, big or small. Here are a few guidelines for how to get started:
+If you find a bug or issue, or If you have a suggestion for a new feature or improvement, please create a new issue on our GitHub repository. ${repository}
+
+
+## Tests
+${tests}
+
+
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at ${email}.  
+You can find more of my work at my GitHub: ${name} my GitHub profile ${repository}
+`;
+
+// Exporting the function to index.js
+module.exports = generateMarkdown;
