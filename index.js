@@ -30,11 +30,6 @@ function init() {
       },
       {
         type: "input",
-        name: "repository",
-        message: "Provide the URL of the GitHub repository:",
-      },
-      {
-        type: "input",
         name: "tests",
         message: "Add test instructions:",
       },
@@ -57,6 +52,11 @@ function init() {
           "Mozilla Public License 2.0",
           "The Unlicense",
         ],
+      },
+      {
+        type: "input",
+        name: "repository",
+        message: "Provide the URL of the GitHub repository:",
       },
       {
         type: "input",

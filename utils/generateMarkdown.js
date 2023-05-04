@@ -78,10 +78,8 @@ const generateMarkdown = ({
 
 ${renderLicenseBadge(license)} 
 
-
 ## Description
 ${description}
-
 
 ## Table of Contents
 * [Description](#description)
@@ -92,32 +90,26 @@ ${description}
 * [Tests](#tests)
 * [Questions](#questions)
 
-
 ## Installation
 ${installation}
 
-
 ## Usage
 ${usage}
-
 
 ## License
 This project is licensed under ${license}  
 ${renderLicenseLink(license)}
 
-
 ## Contributing
-Thank you for considering contributing to our project! We welcome all contributions, big or small. Here are a few guidelines for how to get started:
-If you find a bug or issue, or If you have a suggestion for a new feature or improvement, please create a new issue on our GitHub repository. ${repository}
-
+Thank you for considering contributing to this project! I welcome all contributions, big or small. Here are a few guidelines for how to get started:
+If you find a bug or issue, or If you have a suggestion for a new feature or improvement, please create a new issue on the following GitHub repository: ${repository}
 
 ## Tests
 ${tests}
 
-
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at ${email}.  
-You can find more of my work at my GitHub: ${name} my GitHub profile ${repository}
+You can find more of my work at my GitHub profile: ${name} GitHub repository: ${repository}
 `;
 
 // Exporting the function to index.js
