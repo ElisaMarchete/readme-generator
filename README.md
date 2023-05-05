@@ -24,8 +24,7 @@ This application is licensed under the MIT license.
 ## Screenshot of a README.md sample generated using the application
 ![Screenshot of the application](./assets/screenshot/Capture.PNG)
 
-## Link to walkthrough video and GitHub repository
+## Link to walkthrough video 
 [Link walkthrough video Screencastify Google Drive](https://watch.screencastify.com/v/zAMxJKDXt1KeInCHeQha)  
-[Link GitHub repository](https://github.com/ElisaMarchete/readme-generator.git)
 
 
