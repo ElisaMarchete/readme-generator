@@ -26,6 +26,6 @@ This application is licensed under the MIT license.
 
 ## Link to walkthrough video and GitHub repository
 [Link walkthrough video Screencastify Google Drive](https://watch.screencastify.com/v/zAMxJKDXt1KeInCHeQha)  
-[Link GitHub repository](https://elisamarchete.github.io/readme-generator/)
+[Link GitHub repository](https://github.com/ElisaMarchete/readme-generator.git)
 
 
